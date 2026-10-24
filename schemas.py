@@ -184,3 +184,17 @@ class ClaimVerificationLLMItem(BaseModel):
 class ClaimVerificationLLMOutput(BaseModel):
     """Schema expected from the LLM when verifying claims."""
     evaluations: List[ClaimVerificationLLMItem] = Field(default_factory=list)
+
+
+class SecondPassVerificationItem(BaseModel):
+    """Schema for individual claim-evidence pair verification from second-pass LLM."""
+    claim_id: str
+    evidence_id: str
+    verdict_confirmed: bool
+    quote: Optional[str] = None
+    reasoning: str
+
+
+class SecondPassLLMOutput(BaseModel):
+    """Schema expected from second-pass entailment verification."""
+    verifications: List[SecondPassVerificationItem] = Field(default_factory=list)

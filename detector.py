@@ -6,7 +6,7 @@ citation integrity auditing, and risk scoring aggregation into a structured repo
 
 import time
 import uuid
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Set, Tuple
 
 from ai_engine import AIEngine
 from config import Settings
@@ -19,6 +19,7 @@ from schemas import (
     HuntResponse,
     HuntSummary,
     OverallStatusEnum,
+    SecondPassVerificationItem,
     VerdictEnum,
 )
 
@@ -240,6 +241,133 @@ class HallucinationDetector:
             explanation=explanation,
         )
 
+    async def _reverify_semantic_entailment(
+        self,
+        audited_claims: List[ClaimEvaluation],
+        evidence_manager: EvidenceManager,
+    ) -> List[ClaimEvaluation]:
+        """Perform second-pass adversarial entailment reverification on claims marked SUPPORTED/CONTRADICTED.
+        
+        Reverifies that the cited passage strictly entails the claim and verifies exact substring quotes.
+        Fails safely to UNVERIFIED if verification disagrees, times out, or errors.
+        """
+        claims_to_reverify = [
+            c for c in audited_claims
+            if c.verdict in (VerdictEnum.SUPPORTED, VerdictEnum.CONTRADICTED)
+        ]
+
+        if not claims_to_reverify:
+            return audited_claims
+
+        # Prepare reverification targets
+        targets = []
+        target_keys: Set[Tuple[str, str]] = set()
+        for claim in claims_to_reverify:
+            cited_ids = (
+                claim.supporting_evidence_ids
+                if claim.verdict == VerdictEnum.SUPPORTED
+                else claim.contradicting_evidence_ids
+            )
+            # Deduplicate citations for reverification
+            for ev_id in dict.fromkeys(cited_ids):
+                ev_item = evidence_manager.get(ev_id)
+                if ev_item and (claim.claim_id, ev_id) not in target_keys:
+                    target_keys.add((claim.claim_id, ev_id))
+                    targets.append({
+                        "claim_id": claim.claim_id,
+                        "claim_text": claim.claim_text,
+                        "evidence_id": ev_id,
+                        "evidence_text": ev_item.text,
+                        "verdict_to_confirm": claim.verdict.value,
+                    })
+
+        if not targets:
+            return audited_claims
+
+        # Execute second-pass call with safe fallback on error, timeout, or malformed response
+        second_pass_error: Optional[str] = None
+        second_pass_map: Dict[Tuple[str, str], SecondPassVerificationItem] = {}
+        try:
+            results = await self.ai_engine.reverify_claims_entailment(targets)
+            for r in results:
+                key = (r.claim_id, r.evidence_id)
+                if key in second_pass_map:
+                    # If duplicate results conflict, safely mark unconfirmed
+                    if second_pass_map[key].verdict_confirmed != r.verdict_confirmed:
+                        second_pass_map[key].verdict_confirmed = False
+                        second_pass_map[key].reasoning = "Conflicting duplicate second-pass verification results."
+                else:
+                    second_pass_map[key] = r
+        except Exception as exc:
+            second_pass_error = str(exc)
+
+        # Audit and apply second-pass verification results
+        for claim in audited_claims:
+            if claim.verdict not in (VerdictEnum.SUPPORTED, VerdictEnum.CONTRADICTED):
+                continue
+
+            # Fail-safe: if second-pass timed out, failed, or errored, downgrade to UNVERIFIED
+            if second_pass_error is not None:
+                claim.verdict = VerdictEnum.UNVERIFIED
+                claim.confidence_score = 0.0
+                claim.supporting_evidence_ids = []
+                claim.contradicting_evidence_ids = []
+                claim.explanation = (
+                    f"[Semantic Audit Fail-Safe: Second-pass entailment verification failed ({second_pass_error}). "
+                    f"Safely degraded to UNVERIFIED.] {claim.explanation}"
+                )
+                continue
+
+            cited_ids = (
+                claim.supporting_evidence_ids
+                if claim.verdict == VerdictEnum.SUPPORTED
+                else claim.contradicting_evidence_ids
+            )
+
+            all_confirmed = True
+            failure_reasons = []
+
+            for ev_id in cited_ids:
+                verif = second_pass_map.get((claim.claim_id, ev_id))
+                ev_item = evidence_manager.get(ev_id)
+
+                if verif is None:
+                    all_confirmed = False
+                    failure_reasons.append(f"No second-pass response for evidence '{ev_id}'")
+                    break
+
+                if not verif.verdict_confirmed:
+                    all_confirmed = False
+                    failure_reasons.append(f"Evidence '{ev_id}' does not strictly substantiate verdict ({verif.reasoning})")
+                    break
+
+                # Literal substring quote verification
+                if verif.quote:
+                    clean_quote = verif.quote.strip()
+                    if clean_quote and ev_item and clean_quote not in ev_item.text:
+                        all_confirmed = False
+                        failure_reasons.append(f"Cited quote was not found as a literal substring in evidence '{ev_id}'")
+                        break
+
+            if not all_confirmed:
+                # Downgrade claim to UNVERIFIED
+                claim.verdict = VerdictEnum.UNVERIFIED
+                claim.confidence_score = 0.0
+                claim.supporting_evidence_ids = []
+                claim.contradicting_evidence_ids = []
+                claim.explanation = (
+                    f"[Semantic Audit: Second-pass reverification rejected evidence entailment: "
+                    f"{'; '.join(failure_reasons)}. Degraded to UNVERIFIED.]"
+                )
+            else:
+                claim.explanation = (
+                    f"{claim.explanation} "
+                    f"[Semantic Audit: Second-pass entailment confirmed against cited evidence; "
+                    f"source quotes verified as literal substrings. Note: Substring matching alone does not prove universal entailment.]"
+                )
+
+        return audited_claims
+
     async def hunt(self, request: HuntRequest) -> HuntResponse:
         """Execute the end-to-end hallucination detection pipeline."""
         start_time = time.perf_counter()
@@ -281,13 +409,19 @@ class HallucinationDetector:
             evidence_manager=evidence_mgr,
         )
 
-        # Step 7: Compute aggregate summary
-        summary = self._compute_summary(audited_claims)
+        # Step 7: Second-pass semantic entailment reverification
+        reverified_claims = await self._reverify_semantic_entailment(
+            audited_claims=audited_claims,
+            evidence_manager=evidence_mgr,
+        )
+
+        # Step 8: Compute aggregate summary
+        summary = self._compute_summary(reverified_claims)
         elapsed_ms = round((time.perf_counter() - start_time) * 1000, 2)
 
         return HuntResponse(
             request_id=request_id,
-            claims=audited_claims,
+            claims=reverified_claims,
             summary=summary,
             execution_time_ms=elapsed_ms,
         )
