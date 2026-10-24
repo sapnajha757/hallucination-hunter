@@ -1,0 +1,212 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R /F4 8 0 R /F5 9 0 R >> >> /Annots [10 0 R 11 0 R] >>
+endobj
+4 0 obj
+<< /Length 21170 >>
+stream
+q 0.118 0.161 0.231 RG 1.00 w 0.059 0.090 0.165 rg 34.00 746.89 m 34.00 814.89 l 34.00 817.65 36.24 819.89 39.00 819.89 c 556.28 819.89 l 559.04 819.89 561.28 817.65 561.28 814.89 c 561.28 746.89 l 561.28 744.13 559.04 741.89 556.28 741.89 c 39.00 741.89 l 36.24 741.89 34.00 744.13 34.00 746.89 c B Q
+q 0.220 0.741 0.973 rg BT /F2 7.20 Tf 50.00 804.89 Td (UPWORK WORK SAMPLE | LABELBOX JOB: LBLX116 - PROGRAMMERS FOR AI TRAINING) Tj ET Q
+q 1.000 1.000 1.000 rg BT /F2 17.00 Tf 50.00 784.89 Td (AI HALLUCINATION HUNTER) Tj ET Q
+q 0.796 0.835 0.882 rg BT /F3 9.80 Tf 50.00 769.89 Td ("Evidence-Grounded AI Claim Evaluation") Tj ET Q
+q 0.580 0.639 0.722 rg BT /F1 7.20 Tf 50.00 753.89 Td (Asynchronous REST API * Atomic Claim Decomposition * Second-Pass Substring Entailment Verification) Tj ET Q
+q 0.008 0.518 0.780 RG 1.20 w 0.059 0.153 0.267 rg 351.28 774.89 m 351.28 802.89 l 351.28 805.10 353.07 806.89 355.28 806.89 c 543.28 806.89 l 545.49 806.89 547.28 805.10 547.28 802.89 c 547.28 774.89 l 547.28 772.68 545.49 770.89 543.28 770.89 c 355.28 770.89 l 353.07 770.89 351.28 772.68 351.28 774.89 c B Q
+q 0.220 0.741 0.973 rg BT /F2 7.00 Tf 363.28 793.89 Td (GITHUB REPOSITORY [CLICK TO OPEN]) Tj ET Q
+q 1.000 1.000 1.000 rg BT /F2 7.40 Tf 363.28 780.89 Td (github.com/sapnajha757/hallucination-hunter) Tj ET Q
+q 0.580 0.639 0.722 rg BT /F2 7.00 Tf 357.28 759.89 Td (Python 3.11+  |  FastAPI  |  Pydantic v2  |  43 Passing Tests) Tj ET Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 34.00 653.89 m 34.00 731.89 l 34.00 734.10 35.79 735.89 38.00 735.89 c 350.00 735.89 l 352.21 735.89 354.00 734.10 354.00 731.89 c 354.00 653.89 l 354.00 651.68 352.21 649.89 350.00 649.89 c 38.00 649.89 l 35.79 649.89 34.00 651.68 34.00 653.89 c B Q
+q 0.059 0.090 0.165 rg BT /F2 8.50 Tf 46.00 721.89 Td (PROJECT OVERVIEW & OBJECTIVE) Tj ET Q
+q 0.145 0.388 0.922 RG 1.00 w 46.00 717.89 m 194.00 717.89 l S Q
+q 0.200 0.255 0.333 rg BT /F1 7.50 Tf 46.00 707.89 Td (AI Hallucination Hunter is an asynchronous Python and FastAPI evaluation service that) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.50 Tf 46.00 698.39 Td (assesses factual assertions in AI-generated answers against caller-provided reference) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.50 Tf 46.00 688.89 Td (evidence, emitting strongly-typed, structured JSON responses via Pydantic v2.) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.50 Tf 46.00 675.39 Td (The service decomposes candidate answers into atomic, independently verifiable claims,) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.50 Tf 46.00 665.89 Td (checks each against an ingested evidence store, audits referential citation integrity,) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.50 Tf 46.00 656.39 Td (executes a focused second-pass semantic re-verification with exact literal quote) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.50 Tf 46.00 646.89 Td (validation, and computes deterministic hallucination risk scores.) Tj ET Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 364.00 653.89 m 364.00 731.89 l 364.00 734.10 365.79 735.89 368.00 735.89 c 557.28 735.89 l 559.49 735.89 561.28 734.10 561.28 731.89 c 561.28 653.89 l 561.28 651.68 559.49 649.89 557.28 649.89 c 368.00 649.89 l 365.79 649.89 364.00 651.68 364.00 653.89 c B Q
+q 0.059 0.090 0.165 rg BT /F2 8.50 Tf 376.00 721.89 Td (CORE TECHNOLOGY STACK) Tj ET Q
+q 0.145 0.388 0.922 RG 1.00 w 376.00 717.89 m 504.00 717.89 l S Q
+q 0.059 0.090 0.165 rg BT /F2 7.20 Tf 374.00 707.89 Td (Language & Runtime:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.10 Tf 452.00 707.89 Td (Python 3.11+ / Strict Async Execution) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.20 Tf 374.00 696.89 Td (REST API Layer:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.10 Tf 452.00 696.89 Td (FastAPI >=0.110, Uvicorn ASGI Server) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.20 Tf 374.00 685.89 Td (Data Contracts:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.10 Tf 452.00 685.89 Td (Pydantic v2 & Pydantic-Settings) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.20 Tf 374.00 674.89 Td (LLM Orchestration:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.10 Tf 452.00 674.89 Td (OpenAI SDK \(Async, Groq/Ollama ready\)) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.20 Tf 374.00 663.89 Td (Automated Tests:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 7.10 Tf 452.00 663.89 Td (Pytest & Pytest-Asyncio \(100% Offline Mocks\)) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 9.00 Tf 34.00 630.89 Td (KEY ENGINEERING FEATURES & DEFENSE-IN-DEPTH ARCHITECTURE) Tj ET Q
+q 0.145 0.388 0.922 RG 1.20 w 34.00 626.89 m 374.00 626.89 l S Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 34.00 567.89 m 34.00 617.89 l 34.00 620.10 35.79 621.89 38.00 621.89 c 288.64 621.89 l 290.85 621.89 292.64 620.10 292.64 617.89 c 292.64 567.89 l 292.64 565.68 290.85 563.89 288.64 563.89 c 38.00 563.89 l 35.79 563.89 34.00 565.68 34.00 567.89 c B Q
+q 0.145 0.388 0.922 RG 2.50 w 34.00 621.89 m 34.00 563.89 l S Q
+q 0.059 0.090 0.165 rg BT /F2 7.70 Tf 44.00 609.89 Td (1. Claim-Level Verdicts & Composite Risk Scoring) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 44.00 599.89 Td (Decomposes candidate answers into atomic claims evaluated as) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 44.00 591.29 Td (SUPPORTED, CONTRADICTED, or UNVERIFIED. Emits bounded risk) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 44.00 582.69 Td (scores: Risk = \(Contradictions x 1.0 + Unverified x 0.5\) / Total Claims, mapped) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 44.00 574.09 Td (deterministically to SAFE, CAUTION, and HIGH_RISK qualitative statuses.) Tj ET Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 302.64 567.89 m 302.64 617.89 l 302.64 620.10 304.43 621.89 306.64 621.89 c 557.28 621.89 l 559.49 621.89 561.28 620.10 561.28 617.89 c 561.28 567.89 l 561.28 565.68 559.49 563.89 557.28 563.89 c 306.64 563.89 l 304.43 563.89 302.64 565.68 302.64 567.89 c B Q
+q 0.145 0.388 0.922 RG 2.50 w 302.64 621.89 m 302.64 563.89 l S Q
+q 0.059 0.090 0.165 rg BT /F2 7.70 Tf 312.64 609.89 Td (2. Second-Pass Semantic Reverification & Quotes) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 312.64 599.89 Td (Targets SUPPORTED and CONTRADICTED claims in isolated XML) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 312.64 591.29 Td (boundaries. Submits discrete \(claim, cited_passage\) pairs and enforces that) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 312.64 582.69 Td (returned evidence quotes exist as exact literal substrings \(quote in) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 312.64 574.09 Td (passage.text\), eliminating semantic false positives and hallucinated citation) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 312.64 565.49 Td (IDs.) Tj ET Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 34.00 503.89 m 34.00 553.89 l 34.00 556.10 35.79 557.89 38.00 557.89 c 288.64 557.89 l 290.85 557.89 292.64 556.10 292.64 553.89 c 292.64 503.89 l 292.64 501.68 290.85 499.89 288.64 499.89 c 38.00 499.89 l 35.79 499.89 34.00 501.68 34.00 503.89 c B Q
+q 0.145 0.388 0.922 RG 2.50 w 34.00 557.89 m 34.00 499.89 l S Q
+q 0.059 0.090 0.165 rg BT /F2 7.70 Tf 44.00 545.89 Td (3. Fail-Safe Exception Boundaries & Degradation) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 44.00 535.89 Td (Guarantees operational resilience across provider volatility. Upstream timeouts) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 44.00 527.29 Td (\(HTTP 504\), malformed model outputs \(HTTP 502\), ungrounded quotes, or) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 44.00 518.69 Td (second-pass disagreements safely downgrade claims to UNVERIFIED with) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 44.00 510.09 Td (confidence 0.0, recalculating risk metrics without pipeline crashes.) Tj ET Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 302.64 503.89 m 302.64 553.89 l 302.64 556.10 304.43 557.89 306.64 557.89 c 557.28 557.89 l 559.49 557.89 561.28 556.10 561.28 553.89 c 561.28 503.89 l 561.28 501.68 559.49 499.89 557.28 499.89 c 306.64 499.89 l 304.43 499.89 302.64 501.68 302.64 503.89 c B Q
+q 0.145 0.388 0.922 RG 2.50 w 302.64 557.89 m 302.64 499.89 l S Q
+q 0.059 0.090 0.165 rg BT /F2 7.70 Tf 312.64 545.89 Td (4. Security Hardening & Threat Mitigation) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 312.64 535.89 Td (Defense-in-depth against prompt injection: user inputs are isolated in XML) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 312.64 527.29 Td (containers; structural tags \(</candidate_answer>, </evidence>\) are escaped) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 312.64 518.69 Td (case-insensitively \(&lt;/...&gt;\). Enforces strict regex on evidence IDs) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 312.64 510.09 Td (\(^[a-zA-Z0-9_\\-\\.:]+$\) and provides sanitized 500 error shields.) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 9.00 Tf 34.00 478.89 Td (DEMONSTRATION SCENARIOS: REALISTIC PIPELINE OUTCOMES) Tj ET Q
+q 0.145 0.388 0.922 RG 1.20 w 34.00 474.89 m 334.00 474.89 l S Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 34.00 349.89 m 34.00 465.89 l 34.00 468.10 35.79 469.89 38.00 469.89 c 200.43 469.89 l 202.64 469.89 204.43 468.10 204.43 465.89 c 204.43 349.89 l 204.43 347.68 202.64 345.89 200.43 345.89 c 38.00 345.89 l 35.79 345.89 34.00 347.68 34.00 349.89 c B Q
+q 0.655 0.953 0.816 RG 0.80 w 0.925 0.992 0.961 rg 42.00 447.89 m 42.00 458.89 l 42.00 460.55 43.34 461.89 45.00 461.89 c 193.43 461.89 l 195.08 461.89 196.43 460.55 196.43 458.89 c 196.43 447.89 l 196.43 446.23 195.08 444.89 193.43 444.89 c 45.00 444.89 l 43.34 444.89 42.00 446.23 42.00 447.89 c B Q
+q 0.024 0.373 0.275 rg BT /F2 7.40 Tf 46.00 449.89 Td (VERDICT: SUPPORTED) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 6.70 Tf 42.00 434.89 Td (SAFE  *  Risk: 0.0  *  Conf: 0.98) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 6.70 Tf 42.00 423.89 Td (Candidate Claim:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F3 6.60 Tf 42.00 414.89 Td ("The Eiffel Tower was completed in 1889 for the) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F3 6.60 Tf 42.00 406.79 Td (World's Fair.") Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 6.70 Tf 42.00 395.69 Td (Reference Evidence:) Tj ET Q
+q 0.392 0.455 0.545 rg BT /F1 6.40 Tf 42.00 386.69 Td (Encyclopaedia Britannica: 'Constructed from 1887 to) Tj ET Q
+q 0.392 0.455 0.545 rg BT /F1 6.40 Tf 42.00 378.79 Td (1889 as the centerpiece of the 1889 World's Fair.') Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 42.00 367.89 Td (Audit: Evidence agrees; second-pass entailment) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 42.00 359.99 Td (confirmed and quote validated as exact literal) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 42.00 352.09 Td (substring. Safe risk score \(0.0\).) Tj ET Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 212.43 349.89 m 212.43 465.89 l 212.43 468.10 214.22 469.89 216.43 469.89 c 378.85 469.89 l 381.06 469.89 382.85 468.10 382.85 465.89 c 382.85 349.89 l 382.85 347.68 381.06 345.89 378.85 345.89 c 216.43 345.89 l 214.22 345.89 212.43 347.68 212.43 349.89 c B Q
+q 0.996 0.792 0.792 RG 0.80 w 0.996 0.949 0.949 rg 220.43 447.89 m 220.43 458.89 l 220.43 460.55 221.77 461.89 223.43 461.89 c 371.85 461.89 l 373.51 461.89 374.85 460.55 374.85 458.89 c 374.85 447.89 l 374.85 446.23 373.51 444.89 371.85 444.89 c 223.43 444.89 l 221.77 444.89 220.43 446.23 220.43 447.89 c B Q
+q 0.600 0.106 0.106 rg BT /F2 7.40 Tf 224.43 449.89 Td (VERDICT: CONTRADICTED) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 6.70 Tf 220.43 434.89 Td (HIGH_RISK  *  Risk: 1.0  *  Conf: 0.99) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 6.70 Tf 220.43 423.89 Td (Candidate Claim:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F3 6.60 Tf 220.43 414.89 Td ("The Eiffel Tower was completed in 1999 for the) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F3 6.60 Tf 220.43 406.79 Td (World's Fair.") Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 6.70 Tf 220.43 395.69 Td (Reference Evidence:) Tj ET Q
+q 0.392 0.455 0.545 rg BT /F1 6.40 Tf 220.43 386.69 Td (Encyclopaedia Britannica: 'Constructed from 1887 to) Tj ET Q
+q 0.392 0.455 0.545 rg BT /F1 6.40 Tf 220.43 378.79 Td (1889 as the centerpiece of the 1889 World's Fair.') Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 220.43 367.89 Td (Audit: Direct factual conflict: candidate says 1999,) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 220.43 359.99 Td (while evidence states 1889. Marked) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 220.43 352.09 Td (CONTRADICTED; triggers immediate HIGH_RISK) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 220.43 344.19 Td (status.) Tj ET Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 390.85 349.89 m 390.85 465.89 l 390.85 468.10 392.64 469.89 394.85 469.89 c 557.28 469.89 l 559.49 469.89 561.28 468.10 561.28 465.89 c 561.28 349.89 l 561.28 347.68 559.49 345.89 557.28 345.89 c 394.85 345.89 l 392.64 345.89 390.85 347.68 390.85 349.89 c B Q
+q 0.992 0.902 0.541 RG 0.80 w 1.000 0.984 0.922 rg 398.85 447.89 m 398.85 458.89 l 398.85 460.55 400.20 461.89 401.85 461.89 c 550.28 461.89 l 551.94 461.89 553.28 460.55 553.28 458.89 c 553.28 447.89 l 553.28 446.23 551.94 444.89 550.28 444.89 c 401.85 444.89 l 400.20 444.89 398.85 446.23 398.85 447.89 c B Q
+q 0.573 0.251 0.055 rg BT /F2 7.40 Tf 402.85 449.89 Td (VERDICT: UNVERIFIED) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 6.70 Tf 398.85 434.89 Td (CAUTION  *  Risk: 0.25  *  Conf: 0.00) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 6.70 Tf 398.85 423.89 Td (Candidate Claim:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F3 6.60 Tf 398.85 414.89 Td ("The Phoenix-7 flagship delivers up to 48 hours) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F3 6.60 Tf 398.85 406.79 Td (continuous battery life.") Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 6.70 Tf 398.85 395.69 Td (Reference Evidence:) Tj ET Q
+q 0.392 0.455 0.545 rg BT /F1 6.40 Tf 398.85 386.69 Td (Hardware Datasheet: 'The Phoenix-7 features an) Tj ET Q
+q 0.392 0.455 0.545 rg BT /F1 6.40 Tf 398.85 378.79 Td (octa-core neural processor built on 3nm architecture.') Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 398.85 367.89 Td (Audit: Unrelated evidence: battery-life claim is paired) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 398.85 359.99 Td (with unrelated evidence about an octa-core processor.) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.40 Tf 398.85 352.09 Td (Safely downgraded to UNVERIFIED \(0.0\).) Tj ET Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 34.00 193.89 m 34.00 331.89 l 34.00 334.10 35.79 335.89 38.00 335.89 c 288.64 335.89 l 290.85 335.89 292.64 334.10 292.64 331.89 c 292.64 193.89 l 292.64 191.68 290.85 189.89 288.64 189.89 c 38.00 189.89 l 35.79 189.89 34.00 191.68 34.00 193.89 c B Q
+q 0.059 0.090 0.165 rg BT /F2 8.50 Tf 46.00 321.89 Td (RELEVANCE TO LABELBOX \(LBLX116 ROLE\)) Tj ET Q
+q 0.145 0.388 0.922 RG 1.00 w 46.00 317.89 m 244.00 317.89 l S Q
+q 0.059 0.090 0.165 rg BT /F2 7.20 Tf 46.00 307.89 Td (* Analytical Thinking & Fact-Checking:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 298.89 Td (Deconstructs nuanced AI reasoning into discrete atomic units. Focuses on) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 290.49 Td (rigorous evidence-based factuality, identifying subtle hallucinations,) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 282.09 Td (unsupported generalizations, and factual contradictions.) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.20 Tf 46.00 270.69 Td (* Evidence-Grounded AI Evaluation:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 261.69 Td (Evaluates model claims strictly relative to provided reference corpora,) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 253.29 Td (refusing to import outside knowledge or assume unverified plausibility when) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 244.89 Td (ground-truth reference data is silent.) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.20 Tf 46.00 233.49 Td (* Adversarial Testing & Edge Cases:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 224.49 Td (Anticipates real-world failure modes including subtle citation fabrication,) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 216.09 Td (prompt injection attempts, malformed schema outputs, and misleading) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 207.69 Td (quotes taken out of context.) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.20 Tf 46.00 196.29 Td (* Reliable Output Engineering:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 187.29 Td (Delivers structured Pydantic data models, clean asynchronous architectures,) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 178.89 Td (and deterministic scoring algorithms essential for high-fidelity AI training) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.80 Tf 52.00 170.49 Td (feedback loops.) Tj ET Q
+q 0.886 0.910 0.941 RG 0.75 w 0.973 0.980 0.988 rg 302.64 193.89 m 302.64 331.89 l 302.64 334.10 304.43 335.89 306.64 335.89 c 557.28 335.89 l 559.49 335.89 561.28 334.10 561.28 331.89 c 561.28 193.89 l 561.28 191.68 559.49 189.89 557.28 189.89 c 306.64 189.89 l 304.43 189.89 302.64 191.68 302.64 193.89 c B Q
+q 0.059 0.090 0.165 rg BT /F2 8.50 Tf 314.64 321.89 Td (AUTOMATED TESTING & REPORTED RESULTS) Tj ET Q
+q 0.145 0.388 0.922 RG 1.00 w 314.64 317.89 m 517.64 317.89 l S Q
+q 0.780 0.824 0.996 RG 0.80 w 0.933 0.949 1.000 rg 314.64 290.89 m 314.64 308.89 l 314.64 310.55 315.98 311.89 317.64 311.89 c 546.28 311.89 l 547.94 311.89 549.28 310.55 549.28 308.89 c 549.28 290.89 l 549.28 289.23 547.94 287.89 546.28 287.89 c 317.64 287.89 l 315.98 287.89 314.64 289.23 314.64 290.89 c B Q
+q 0.145 0.388 0.922 rg BT /F2 8.00 Tf 320.64 301.89 Td (REPORTED RESULT: 43 PASSING TESTS) Tj ET Q
+q 0.310 0.275 0.898 rg BT /F3 6.50 Tf 320.64 291.89 Td (The project has previously reported 43 passing tests. \(Reported result, not a newly verified test run\).) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.10 Tf 314.64 278.89 Td (Test Suite Coverage Breakdown \(100% Offline Mocks\):) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.00 Tf 314.64 267.89 Td (* Core Endpoints & OpenAPI:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.60 Tf 320.64 259.89 Td (Validates /hunt, /health service metadata, and Swagger schema specs.) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.00 Tf 314.64 249.99 Td (* Scoring Logic & Edge Cases:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.60 Tf 320.64 241.99 Td (Examines formula edge cases, conflicting citations, and zero-claim handling.) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.00 Tf 314.64 232.09 Td (* Payload & DoS Boundaries:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.60 Tf 320.64 224.09 Td (Enforces strict limits on characters \(50k total\) and evidence counts \(20 max\).) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.00 Tf 314.64 214.19 Td (* Prompt Injection Security:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.60 Tf 320.64 206.19 Td (Validates case-insensitive tag escaping \(</evidence> to &lt;/evidence&gt;\).) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.00 Tf 314.64 196.29 Td (* Citation Fabrications:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.60 Tf 320.64 188.29 Td (Strips fabricated evidence IDs, automatically degrading claims to UNVERIFIED.) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.00 Tf 314.64 178.39 Td (* Second-Pass Fail-Safes:) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.60 Tf 320.64 170.39 Td (Tests timeout and malformed JSON recovery, validating literal substrings.) Tj ET Q
+q 0.796 0.835 0.882 RG 0.75 w 0.945 0.961 0.976 rg 34.00 101.89 m 34.00 177.89 l 34.00 180.10 35.79 181.89 38.00 181.89 c 557.28 181.89 l 559.49 181.89 561.28 180.10 561.28 177.89 c 561.28 101.89 l 561.28 99.68 559.49 97.89 557.28 97.89 c 38.00 97.89 l 35.79 97.89 34.00 99.68 34.00 101.89 c B Q
+q 0.145 0.388 0.922 RG 3.50 w 34.00 181.89 m 34.00 97.89 l S Q
+q 0.059 0.090 0.165 rg BT /F2 8.50 Tf 48.00 168.89 Td (PROJECT LIMITATIONS & EPISTEMIC DISCLAIMER) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 48.00 156.89 Td (* Grounding vs. Objective Truth: AI Hallucination Hunter assists with evidence-grounded evaluation against caller-provided texts; it cannot guarantee absolute) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 48.00 148.19 Td (universal truth or replace expert human review. If user-supplied evidence contains errors or omissions, evaluations strictly reflect those source limitations.) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 48.00 136.49 Td (* Quote Matching Caveat: Exact literal substring matching confirms that cited text fragments physically appear in reference passages, preventing citation fabrication.) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 48.00 127.79 Td (However, literal quote matching alone does not prove semantic entailment; quotes can be selectively extracted, ironic, or contextually inverted.) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 48.00 116.09 Td (* Heuristic Nature: Confidence scores represent heuristic measures of semantic alignment, not calibrated probabilities. Automated evaluation serves as an efficient) Tj ET Q
+q 0.200 0.255 0.333 rg BT /F1 6.90 Tf 48.00 107.39 Td (verification assist layer alongside human-in-the-loop oversight.) Tj ET Q
+q 0.886 0.910 0.941 RG 1.00 w 34.00 89.89 m 561.28 89.89 l S Q
+q 0.145 0.388 0.922 rg BT /F2 7.50 Tf 34.00 75.89 Td (GitHub: https://github.com/sapnajha757/hallucination-hunter) Tj ET Q
+q 0.392 0.455 0.545 rg BT /F1 7.50 Tf 299.00 75.89 Td (Python * FastAPI * Pydantic v2 * Pytest) Tj ET Q
+q 0.059 0.090 0.165 rg BT /F2 7.50 Tf 396.28 75.89 Td (Application Sample: Labelbox LBLX116) Tj ET Q
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold /Encoding /WinAnsiEncoding >>
+endobj
+10 0 obj
+<< /Type /Annot /Subtype /Link /Rect [351.28 770.89 547.28 806.89] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sapnajha757/hallucination-hunter) >> >>
+endobj
+11 0 obj
+<< /Type /Annot /Subtype /Link /Rect [34.0 71.89 284.0 85.89] /Border [0 0 0] /A << /S /URI /URI (https://github.com/sapnajha757/hallucination-hunter) >> >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000317 00000 n 
+0000021540 00000 n 
+0000021637 00000 n 
+0000021739 00000 n 
+0000021844 00000 n 
+0000021939 00000 n 
+0000022039 00000 n 
+0000022217 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+22390
+%%EOF
